@@ -1,0 +1,38 @@
+U-Net params: 1.98M
+[ddpm] epoch 01 train 0.0896 val 0.0562 (61.5s)
+[ddpm] epoch 02 train 0.0532 val 0.0500 (62.7s)
+[ddpm] epoch 03 train 0.0479 val 0.0476 (63.3s)
+[ddpm] epoch 04 train 0.0454 val 0.0446 (63.8s)
+[ddpm] epoch 05 train 0.0435 val 0.0422 (63.9s)
+[ddpm] epoch 06 train 0.0433 val 0.0429 (64.0s)
+[ddpm] epoch 07 train 0.0415 val 0.0419 (63.6s)
+[ddpm] epoch 08 train 0.0415 val 0.0426 (64.1s)
+[ddpm] epoch 09 train 0.0407 val 0.0421 (64.1s)
+[ddpm] epoch 10 train 0.0402 val 0.0405 (64.0s)
+[ddpm] epoch 11 train 0.0398 val 0.0386 (63.9s)
+[ddpm] epoch 12 train 0.0399 val 0.0404 (63.7s)
+[ddpm] epoch 13 train 0.0402 val 0.0393 (63.7s)
+[ddpm] epoch 14 train 0.0392 val 0.0405 (63.6s)
+[ddpm] epoch 15 train 0.0387 val 0.0396 (63.8s)
+[ddpm] epoch 16 train 0.0388 val 0.0389 (64.2s)
+[ddpm] epoch 17 train 0.0383 val 0.0387 (63.9s)
+[ddpm] epoch 18 train 0.0382 val 0.0395 (63.9s)
+[ddpm] epoch 19 train 0.0378 val 0.0385 (63.9s)
+[ddpm] epoch 20 train 0.0385 val 0.0381 (63.9s)
+[ddpm] epoch 21 train 0.0379 val 0.0375 (64.0s)
+[ddpm] epoch 22 train 0.0380 val 0.0371 (64.3s)
+[ddpm] epoch 23 train 0.0374 val 0.0377 (64.6s)
+[ddpm] epoch 24 train 0.0379 val 0.0384 (64.5s)
+[ddpm] epoch 25 train 0.0371 val 0.0394 (64.4s)
+[ddpm] epoch 26 train 0.0375 val 0.0374 (64.5s)
+[ddpm] epoch 27 train 0.0372 val 0.0372 (64.3s)
+[ddpm] epoch 28 train 0.0367 val 0.0363 (64.8s)
+[ddpm] epoch 29 train 0.0371 val 0.0370 (64.6s)
+[ddpm] epoch 30 train 0.0371 val 0.0365 (64.3s)
+{
+  "latency_ms": 24854.525916000057,
+  "epoch_time_s": 63.932220147466644,
+  "latent_dim": "1x28x28",
+  "sampling_steps": 1000
+}
+fid 17.053380966186523
