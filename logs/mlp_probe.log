@@ -1,0 +1,84 @@
+[clf] epoch 01 loss 0.6084 val acc 0.8347
+[clf] epoch 02 loss 0.4096 val acc 0.8526
+[clf] epoch 03 loss 0.3630 val acc 0.8659
+[clf] epoch 04 loss 0.3351 val acc 0.8691
+[clf] epoch 05 loss 0.3132 val acc 0.8747
+[clf] epoch 06 loss 0.2992 val acc 0.8747
+[clf] epoch 07 loss 0.2866 val acc 0.8820
+[clf] epoch 08 loss 0.2741 val acc 0.8781
+[clf] epoch 09 loss 0.2646 val acc 0.8849
+[clf] epoch 10 loss 0.2534 val acc 0.8847
+[clf] epoch 11 loss 0.2453 val acc 0.8871
+[clf] epoch 12 loss 0.2364 val acc 0.8937
+[clf] epoch 13 loss 0.2268 val acc 0.8896
+[clf] epoch 14 loss 0.2213 val acc 0.8939
+[clf] epoch 15 loss 0.2152 val acc 0.8884
+[clf] epoch 16 loss 0.2039 val acc 0.8963
+[clf] epoch 17 loss 0.2022 val acc 0.8903
+[clf] epoch 18 loss 0.1921 val acc 0.8956
+[clf] epoch 19 loss 0.1885 val acc 0.8969
+[clf] epoch 20 loss 0.1779 val acc 0.8959
+[clf] epoch 21 loss 0.1783 val acc 0.8931
+[clf] epoch 22 loss 0.1693 val acc 0.8947
+[clf] epoch 23 loss 0.1669 val acc 0.8947
+[clf] epoch 24 loss 0.1642 val acc 0.8957
+[clf] epoch 25 loss 0.1573 val acc 0.8944
+[clf] epoch 26 loss 0.1528 val acc 0.8950
+[clf] epoch 27 loss 0.1467 val acc 0.8974
+[clf] epoch 28 loss 0.1465 val acc 0.8976
+[clf] epoch 29 loss 0.1381 val acc 0.8954
+[clf] epoch 30 loss 0.1350 val acc 0.8950
+[clf] TEST ACC 0.8924
+{
+  "test_acc": 0.8924285714285715,
+  "rank_W1": 256,
+  "ortho_error": {
+    "fc1": 22.47067642211914,
+    "fc2": 5.299572467803955,
+    "fc3": 2.229628324508667
+  },
+  "z_mlp_zero_frac": 0.5683013200759888,
+  "stage3_transpose_recon": {
+    "mse": 0.3166750019618443,
+    "psnr": 5.034167254856655,
+    "ssim": 0.04714505334411349
+  }
+}
+[frozen-dec] epoch 01 train 0.03601 val 0.02713
+[frozen-dec] epoch 02 train 0.02499 val 0.02400
+[frozen-dec] epoch 03 train 0.02277 val 0.02246
+[frozen-dec] epoch 04 train 0.02154 val 0.02144
+[frozen-dec] epoch 05 train 0.02076 val 0.02086
+[frozen-dec] epoch 06 train 0.02016 val 0.02042
+[frozen-dec] epoch 07 train 0.01973 val 0.01993
+[frozen-dec] epoch 08 train 0.01938 val 0.01978
+[frozen-dec] epoch 09 train 0.01911 val 0.01945
+[frozen-dec] epoch 10 train 0.01885 val 0.01927
+[frozen-dec] epoch 11 train 0.01865 val 0.01919
+[frozen-dec] epoch 12 train 0.01848 val 0.01903
+[frozen-dec] epoch 13 train 0.01834 val 0.01883
+[frozen-dec] epoch 14 train 0.01821 val 0.01879
+[frozen-dec] epoch 15 train 0.01811 val 0.01875
+[frozen-dec] epoch 16 train 0.01801 val 0.01865
+[frozen-dec] epoch 17 train 0.01791 val 0.01855
+[frozen-dec] epoch 18 train 0.01782 val 0.01843
+[frozen-dec] epoch 19 train 0.01774 val 0.01855
+[frozen-dec] epoch 20 train 0.01767 val 0.01835
+[frozen-dec] epoch 21 train 0.01762 val 0.01835
+[frozen-dec] epoch 22 train 0.01757 val 0.01830
+[frozen-dec] epoch 23 train 0.01750 val 0.01816
+[frozen-dec] epoch 24 train 0.01745 val 0.01817
+[frozen-dec] epoch 25 train 0.01741 val 0.01821
+[frozen-dec] epoch 26 train 0.01737 val 0.01807
+[frozen-dec] epoch 27 train 0.01733 val 0.01811
+[frozen-dec] epoch 28 train 0.01728 val 0.01822
+[frozen-dec] epoch 29 train 0.01725 val 0.01807
+[frozen-dec] epoch 30 train 0.01723 val 0.01808
+frozen z_MLP decoder: {'mse': np.float64(0.017983638350452694), 'psnr': np.float64(18.263897354125977), 'ssim': np.float64(0.7133758273124695)}
+vanilla AE z_AE     : {'mse': 0.0064812525542719025, 'psnr': 23.003984830583846, 'ssim': 0.867219020979745}
+{
+  "fid": 145.99185180664062,
+  "sampled_z_negative_frac": 0.2207968831062317,
+  "clf_confidence_on_samples": 0.7811505794525146,
+  "clf_confidence_on_real": 0.9376720786094666
+}
