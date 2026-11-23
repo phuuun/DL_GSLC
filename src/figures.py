@@ -131,16 +131,20 @@ def main():
                     "frozen dec (z_mlp)", "prior sample"],
                    "figures/fig3_mlp_probe.png", col_labels=CLASSES)
 
-        # ---- fig 4: latent interpolation trouser -> sneaker ----
-        a = torch.linspace(0, 1, 10, device=DEVICE)[:, None]
-        pair = x[[1, 7]]
+        # ---- fig 4: z(α) = (1-α) z_A + α z_B, α in {0, .2, ..., 1} as the brief asks ----
+        a = torch.linspace(0, 1, 6, device=DEVICE)[:, None]
+        pair = x[[1, 7]]                                    # encoders: trouser -> sneaker
         rows = []
         for enc, decode in ((ae.encode, ae.decode), (sae.encode, sae.decode),
                             (lambda t: vae.encode(t)[0], vae.decode)):
             zA, zB = enc(pair)
             rows.append(decode((1 - a) * zA + a * zB))
-        image_rows(rows, ["vanilla ae", "sparse ae", "vae (μ)"], "figures/fig4_interpolation.png",
-                   col_labels=[f"{v:.2f}" for v in a.squeeze(1).tolist()])
+        for G in (G_gan, G_dc):                             # no encoder: two random prior draws
+            zA, zB = torch.randn(2, 100, device=DEVICE)
+            rows.append((G((1 - a) * zA + a * zB) + 1) / 2)
+        image_rows(rows, ["vanilla ae", "sparse ae", "vae (μ)", "vanilla gan", "dcgan"],
+                   "figures/fig4_interpolation.png", width=4.2,
+                   col_labels=[f"α={v:.1f}" for v in a.squeeze(1).tolist()])
 
     # ---- fig 5: training curves (top) + DDPM reverse trajectory (bottom) ----
     fig = plt.figure(figsize=(7.5, 4.4))
